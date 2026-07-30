@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    padding-bottom: 100px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    padding: 15px; 
+    justify-content: space-between;
+    background-color: #f4ebe1;
+}
+
+.head {
+    display: inline-block;
+    font-family: Copperplate, Papyrus, fantasy;
+    padding-right: 50px;
+}
+
+.menu-bar {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.menu-item {
+    display: inline-block;
+    padding-left: 20px;
+    font-family: Copperplate, Papyrus, fantasy;
+    background: none;
+    border: none;
+    font-size: 16pt;
+    border-radius: 40px;
+    text-decoration: none;
+    color: inherit;
+
+    transition: 0.5s;
+}
+
+.menu-item:hover {
+    font-size: 18pt;
+}
+
+.separator {
+    background-color: rgb(107, 32, 32);
+    width:100%;
+    height: 8px;
+}
+
+.photo-box {
+    width: 100%;
+    height: 60%;
+
+    position: relative;
+}
+
+.photo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 50%
+}
+
+.paragraph {
+    margin: 20px;
+    font-family: Optima, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    font-size: 16pt;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+    z-index: 9999;
+    animation: fadeIn 1s;
+}
+
+.button-wrapper {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.button-wrapper img {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+
+/*==================
+
+    Footer CSS
+
+==================*/
+
+.copyright {
+    margin: 0px;
+    padding: 0px;
+    color: white;    
+    font-family: Optima, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+.footer {
+    bottom: 0px;
+    position: fixed;
+    padding: 10px;
+    background-color: #202020;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.social-media {
+    float: right;
+    padding-right: 30px
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    font-family: Arial, sans-serif;
+}
