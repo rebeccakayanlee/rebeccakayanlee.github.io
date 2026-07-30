@@ -30,7 +30,7 @@ function submitForm() {
 
     $.ajax({
         method: 'POST',
-        url: 'https://formsubmit.co/ajax/subbynekoboi@gmail.com',
+        url: 'https://formsubmit.co/ajax/rebeccakayanleeaudio@gmail.com',
         dataType: 'json',
         accepts: 'application/json',
         data: {
