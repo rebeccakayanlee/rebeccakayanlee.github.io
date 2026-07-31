@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
     <script type="text/javascript" src ="js/index.js"></script>
 </head>
-<body onload="runPhotoBox(); updateScrollStatus();">
+<body onload="buildPhotoBox(); runPhotoBox(); updateScrollStatus();">
     <!-- top -->
     <div class="top">
         <div class="head" >
@@ -28,7 +28,7 @@
     <div class="separator"></div>
 
     <!--Photo Display-->
-    <div class="photo-box">
+    <div id="photo-box" class="photo-box">
         <!--Control Buttons-->
         <button onclick="runTransition(imageID + 1)" style="right: 0px;" class="arrow-button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         <button onclick="runTransition(imageID - 1)" style="left: 0px;" class="arrow-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
@@ -43,17 +43,6 @@
 
         <!--Photos-->
         <div id="photo1" class="photo" style="background-image: url(images/cover1.jpg); opacity: 1;"></div>
-        <div id="photo2" class="photo" style="background-image: url(images/cover2.jpg);"></div>
-        <div id="photo3" class="photo" style="background-image: url(images/cover3.jpg);"></div>
-        <div id="photo4" class="photo" style="background-image: url(images/cover4.jpg);"></div>
-        <div id="photo5" class="photo" style="background-image: url(images/cover5.jpg);"></div>
-        <div id="photo6" class="photo" style="background-image: url(images/cover6.jpg);"></div>
-        <div id="photo7" class="photo" style="background-image: url(images/cover7.jpg);"></div>
-        <div id="photo8" class="photo" style="background-image: url(images/cover8.jpg);"></div>
-        <div id="photo9" class="photo" style="background-image: url(images/cover9.jpg);"></div>
-        <div id="photo10" class="photo" style="background-image: url(images/cover10.jpg);"></div>
-        <div id="photo11" class="photo" style="background-image: url(images/cover11.jpg);"></div>
-        <div id="photo12" class="photo" style="background-image: url(images/cover12.jpg);"></div>
     </div>
 
     <!-- About -->

@@ -7,6 +7,13 @@ let animating = false;
 
 let timer;
 
+function buildPhotoBox() {
+    let PhotoBox = document.getElementById('photo-box');
+    for (let i = 2; i <= ImageCount; i++) {
+        PhotoBox.innerHTML += `<div id="photo${i}" class="photo" style="background-image: url(images/cover${i}.jpg);"></div>`
+    }
+}
+
 function runPhotoBox() {
     timer = setTimeout(() => {
         let futureID = ((imageID + 1) % ImageCount) || ImageCount;
