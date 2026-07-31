@@ -1,0 +1,57 @@
+<head>
+    <title>Rebecca Lee</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <script type="text/javascript" src ="js/projects.js"></script>
+    <script type="text/javascript" src ="data/projects.js"></script>
+</head>
+<body onload="buildList()">
+    <!-- top -->
+    <div class="top">
+        <div class="head" >
+            <div style="font-size: 40pt">Rebecca Lee</div>
+            <div style="font-size: 14pt">Audio • Video • Events</div>
+        </div>
+
+    <!-- Menu Bar-->
+        <div class="head menu-bar">
+            <a class="menu-item" href="index.html">Home</a>
+            <a class="menu-item" href="about.html">About</a>
+            <a class="menu-item" href="projects.html">Projects</a>
+            <a class="menu-item" href="portfolio.html">Portfolio</a>
+            <a class="menu-item" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!--Bar-->
+    <div class="separator"></div>
+
+    <!-- Body -->
+    <div class="paragraph">
+        <center><h2>Projects</h2></center>
+        <div id="project-field" style="display: flex; flex-wrap: wrap; align-content: top"></div>
+    </div>
+
+    <!-- Popups -->
+    <div id="popup-player" class="popup-player">
+        <button onclick="hidePlayer()" style="color: white; position: absolute; top: 0px; left: 0px; font-size: 30pt; border: none; background: none;"><i class="fa fa-window-close" aria-hidden=true></i></button>
+        <div id="player-area"></div>
+    </div>
+    <div id="project-popup" class="popup-menu"></div>
+
+    <!-- Links -->
+    <div class="footer">
+        <div>&nbsp;</div>
+        <div class="copyright">
+            Rebecca Lee &copy; 2026
+        </div>
+        <div class="social-media">
+            <div class="button-wrapper"><a target="_blank" href="https://www.facebook.com/lee.rebecca.ky"><img src="images/facebook.png" height="50" width="50"></a></div>
+            <div class="button-wrapper"><a target="_blank" href="https://www.instagram.com/rebecca_ky_lee"><img src="images/instagram.png" height="50" width="50"></a></div>
+            <div class="button-wrapper"><a target="_blank" href="https://www.instagram.com/rebeccaaudio"><img src="images/instagram.png" height="50" width="50"></a></div>
+            <div class="button-wrapper"><a target="_blank" href="https://www.linkedin.com/in/rebecca-lee-1b8316423/"><img src="images/linkedin.png" height="50" width="50"></a></div>
+        </div>
+    </div>
+</body>

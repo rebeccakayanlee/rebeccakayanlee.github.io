@@ -129,3 +129,65 @@ input {
     height: 30px;
     font-family: Arial, sans-serif;
 }
+
+.album-button {
+    border: none;
+    background: none;
+    font-size: 13pt;
+    text-align: center;
+    margin: 30px;
+    width: 220px;
+    vertical-align: top;
+    padding: 10px;
+
+    transition: 0.5s;
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+}
+
+.album-button:hover {
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.album-cover {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+.popup-menu {
+    display: none;
+    position: absolute;
+    background: cornsilk;
+    padding: 0px;
+}
+
+.popup-player {
+    display: none;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+
+    height: 100%
+    max-height: 500px;
+
+    position: fixed;
+    bottom: 0vh;
+    right: 0vh;
+    z-index: 9999;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    font-family: Optima, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 5px;
+}
