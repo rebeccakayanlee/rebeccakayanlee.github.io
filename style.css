@@ -197,6 +197,7 @@ table, th, td {
     background: none;
     padding: 5px;
     color: white;
+    opacity: 0.7;
     
     position: absolute;
     top: 45%;
@@ -214,7 +215,7 @@ table, th, td {
     border: none;
     background: none;
     color: white;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .scroll-button:hover {
