@@ -80,7 +80,7 @@ body {
 
 .fade-in {
     z-index: 9999;
-    animation: fadeIn 1s;
+    animation: fadeIn 0.8s;
 }
 
 .button-wrapper {
@@ -116,12 +116,13 @@ body {
     background-color: #202020;
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
 .social-media {
-    float: right;
-    padding-right: 30px
+    padding-right: 30px;
+    text-align: right
 }
 
 input {
@@ -170,7 +171,7 @@ input {
     width: 100%;
     box-sizing: border-box;
 
-    height: 100%
+    height: 100%;
     max-height: 500px;
 
     position: fixed;
@@ -190,4 +191,33 @@ table, th, td {
   border-collapse: collapse;
   margin: 0px;
   padding: 5px;
+}
+
+.arrow-button {
+    border: none;
+    background: none;
+    padding: 5px;
+    color: white;
+    
+    position: absolute;
+    top: 45%;
+    z-index: 99999;
+    font-size: 25pt;
+    
+    transition: 0.4s
+}
+
+.arrow-button:hover {
+    text-shadow: 0 0 10px rgb(218, 229, 255), 0 0 20px rgb(218, 229, 255), 0 0 40px rgb(218, 229, 255);
+}
+
+.scroll-button {
+    border: none;
+    background: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.scroll-button:hover {
+    text-shadow: 0 0 10px rgb(218, 229, 255), 0 0 20px rgb(218, 229, 255), 0 0 40px rgb(218, 229, 255);
 }

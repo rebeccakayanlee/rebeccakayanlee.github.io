@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
     <script type="text/javascript" src ="js/index.js"></script>
 </head>
-<body onload="runPhotoBox()">
+<body onload="runPhotoBox(); updateScrollStatus();">
     <!-- top -->
     <div class="top">
         <div class="head" >
@@ -23,11 +24,18 @@
         </div>
     </div>
 
-
-
-
-    <!--Photos-->
+    <!--Photo Display-->
     <div class="photo-box">
+        <!--Control Buttons-->
+        <button onclick="runTransition(imageID + 1)" style="right: 0px;" class="arrow-button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        <button onclick="runTransition(imageID - 1)" style="left: 0px;" class="arrow-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+
+        <!--Scroll control-->
+        <div style="z-index: 99999; position: absolute; left: 50%; bottom: 8px;">
+            <div id="photo-scroll" style="font-size: 10px; color: white; position: relative; left: -50%;"></div>
+        </div>
+
+        <!--Photos-->
         <div id="photo1" class="photo" style="background-image: url(images/cover1.jpg); opacity: 1;"></div>
         <div id="photo2" class="photo" style="background-image: url(images/cover2.jpg);"></div>
         <div id="photo3" class="photo" style="background-image: url(images/cover3.jpg);"></div>
